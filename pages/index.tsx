@@ -14,7 +14,7 @@ export default function Home({ userCount }: { userCount: number }) {
 
     const copy = () => {
         navigator.clipboard.writeText(
-            `[![Discord Presence](https://lanyard.kyrie25.me/api/${userId})](https://discord.com/users/${userId})`
+            `[![Discord Presence](https://lanyard.habanerospices.com/api/${userId})](https://discord.com/users/${userId})`
         );
         setCopyState("Copied!");
 
@@ -63,12 +63,12 @@ export default function Home({ userCount }: { userCount: number }) {
                     {userId ? (
                         <>
                             <Output>
-                                [![Discord Presence](https://lanyard.kyrie25.me/api/{userId}
+                                [![Discord Presence](https://lanyard.habanerospices.com/api/{userId}
                                 )](https://discord.com/users/{userId})
                             </Output>
                             <ActionButton onClick={copy}>{copyState}</ActionButton>
                             <a
-                                href="https://github.com/cnrad/lanyard-profile-readme#options"
+                                href="https://github.com/habanerospices/lanyard-profile#options"
                                 target="_blank"
                                 rel="noreferrer"
                             >
